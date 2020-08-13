@@ -104,4 +104,30 @@ var productPrice: Double = 10.99
 
 var cost = Double(quantity) * productPrice // explicit cast needed here to mix Int and Double math
 
+/*:
+### Exercise
 
+Consider this scenario: You have a shopping cart with 6 items in it.  The total price of all the items combined is $78.50
+You have a coupon that gets you 25% off of the total price.
+After the coupon is applied, taxes will be applied at a rate of 7.75% of the total cost (cost after coupon).
+
+1. Create 6 different constants that represent the price of each item
+2. Perform addition operations to get the total price of all 6 items and store it in a constant ($78.50)
+3. Create a constant for the 25% coupon
+4. Create a constant called `priceAfterDiscount` and store the total price after the 25% discount has been applied (should equal around $58.87)
+5. Create a constant called `taxes` that stores the total taxes to be charged using the tax rate (should equal around $4.56)
+5. Create a constant called `finalPrice` that applies the 7.75% tax rate to priceAfterDicscount.  (should equal around $63.43)
+*/
+
+let item1Price = 10.0
+let item2Price = 10.0
+let item3Price = 10.0
+let item4Price = 10.0
+let item5Price = 10.0
+let item6Price = 28.50
+let totalPrice = item1Price + item2Price + item3Price + item4Price + item5Price + item6Price
+let coupon = 0.25
+let priceAfterDiscount = totalPrice - (totalPrice * coupon)
+let taxes = 0.0775
+let finalPrice =  priceAfterDiscount + (priceAfterDiscount * taxes)
+print(finalPrice)
