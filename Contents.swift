@@ -60,3 +60,48 @@ let seats = 4
 var mileage = 250000
 print (make)
 print (model)
+
+//Strings
+
+//explicit type declaration vs. type inference
+var age1: String = "10"
+let firstName = "Jenna"
+let lastName = "Smith"
+
+var fullName = firstName + " " + lastName //String concat
+print(fullName)
+
+var myAge = 25
+var newMessage = "Hi, my name is \(firstName) and I am \(myAge) years old" // string interpolation
+print(newMessage)
+newMessage.append(". And I like scary clowns.")
+print(newMessage)
+
+// Numbers
+
+var agea = 15 // type inference Integer
+var price = 10.99 // Double
+var floatPrice: Float = 10.99 //Float
+var size: Int = 6
+var length = 10
+var width = 5
+let area = length * width
+print("The area is \(area)")
+var health = 100
+var poisonDamage = 19
+health -= poisonDamage //compound assignment operator
+print("Health is \(health)")
+
+var tLength: Double = 10
+var tWidth: Double = 5
+
+let triangleArea = sqrt(pow(tLength,2) + pow(tWidth,2))
+print(triangleArea)
+
+
+var quantity: Int = 5
+var productPrice: Double = 10.99
+
+var cost = Double(quantity) * productPrice // explicit cast needed here to mix Int and Double math
+
+
