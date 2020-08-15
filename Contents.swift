@@ -239,3 +239,32 @@ for z in 0...27 {
 for salary in employeeSalaries2 {
     print("Salary is \(salary)")
 }
+
+/*:
+### Exercise
+
+Consider a banking system where the computer stores transactional data for a customer's account.
+
+1.  Create an array of Double that stores the amounts of ten past purchases
+2.  Create a loop that iterates through the array and prints the amount spent with this formatting: `"Purchase: $X"` where X is the amount of the purchase
+3.  The bank improperly calculated the purchases. Create a *different* loop style that iterates through the array and and adds $0.10 to each purchase amount then print the array
+4.  Create a loop that iterates through the array starting at the *end* of the array and going to the beginning
+
+*/
+
+var pastPurchases: [Double] = [2.35, 5.5, 6.2, 45.23, 23.22, 25.6]
+// print purchases
+for purchase in pastPurchases {
+    print("Purchase: $\(purchase)")
+}
+//adjust purchases
+let adjustment = 0.10
+for x in 0..<pastPurchases.count {
+    pastPurchases[x] = pastPurchases[x] + (pastPurchases[x] * adjustment)
+}
+print(pastPurchases)
+//print purchases in reverse
+for x in (0..<pastPurchases.count).reversed() {
+    print(pastPurchases[x])
+}
+
