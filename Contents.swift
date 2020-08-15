@@ -153,3 +153,32 @@ if color == "blue" {
     print("unknown color")
 }
 
+
+/*:
+ ### Exercise
+ 
+ Consider some basic American traffic signaling.
+ 
+ 1.  Create a string variable called `currentLightColor`
+ 2.  Set it's value to "Green", "Yellow", or "Red"
+ 3.  Create conditional if / else logic to print: "The light is X" where X is the value of the light variable
+ 4.  If if /else clause should print the appropriate color
+ */
+var currentLightColor: String = "Green"
+
+if currentLightColor == "Green" {
+    print("It is time to go")
+} else if currentLightColor == "Yellow" {
+    print("whoa there buddy")
+} else if currentLightColor == "Red" {
+    print("STOP!")
+} else {
+    print("Unknown light color")
+}
+
+
+
+
+
+
+
