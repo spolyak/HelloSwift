@@ -131,3 +131,25 @@ let priceAfterDiscount = totalPrice - (totalPrice * coupon)
 let taxes = 0.0775
 let finalPrice =  priceAfterDiscount + (priceAfterDiscount * taxes)
 print(finalPrice)
+
+// bools, conditional and comparison operators
+
+if true == false || true == true {
+    print("i see")
+}
+// !=
+var hasDataFinishedDownloading: Bool = false
+if !hasDataFinishedDownloading {
+    print("wait")
+}
+
+let color = "red"
+
+if color == "blue" {
+    print ("blue")
+} else if color == "red" {
+    print("red")
+} else {
+    print("unknown color")
+}
+
