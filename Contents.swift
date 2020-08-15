@@ -213,7 +213,29 @@ donutCount.insert(0, at: 0)
 donuts.removeAll()
 donutCount.removeAll()
 
+//loops
 
 
+var employeeSalaries2: [Double] = [54.0,45.0,25.0,20.0]
+let increase = 0.10
 
+var x = 0
+repeat {
+    employeeSalaries2[x] = employeeSalaries2[x] + (employeeSalaries2[x] * increase)
+    x += 1
+} while (x < employeeSalaries2.count)
 
+print(employeeSalaries2)
+
+for i in 0..<employeeSalaries2.count {
+    employeeSalaries2[i] = employeeSalaries2[i] + (employeeSalaries2[i] * increase)
+}
+print(employeeSalaries2)
+
+for z in 0...27 {
+    print("z is \(z)")
+}
+
+for salary in employeeSalaries2 {
+    print("Salary is \(salary)")
+}
