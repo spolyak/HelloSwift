@@ -192,6 +192,27 @@ print(employeeSalaries)
 //initialize array
 var students = [String]()
 
+/*:
+### Exercise
+
+1.  Create an array that stores the names of 6 different donuts
+2.  Create a 2nd array that stores the quantity of each of those donuts as an Int
+3.  Remove the last donut in the array and the corresponding last quantity in the quantity array
+4.  Add a new donut name at the beginning of the donut names array and add a new quantity of 0 (zero)  at the beginning of the quantity array
+5.  Remove all elements in both arrays
+
+
+*/
+
+var donuts: [String] = ["Glazed", "Chocolate","Jelly", "Jesus", "Mint"]
+var donutCount: [Int] = [5,2,3,2,1]
+donuts.remove(at: 4)
+donutCount.remove(at: 4)
+donuts.insert("Coconut", at: 0)
+donutCount.insert(0, at: 0)
+donuts.removeAll()
+donutCount.removeAll()
+
 
 
 
