@@ -176,6 +176,9 @@ if currentLightColor == "Green" {
     print("Unknown light color")
 }
 
+// constants and logical operators
+
+// && or || operators
 
 
 
