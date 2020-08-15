@@ -180,6 +180,17 @@ if currentLightColor == "Green" {
 
 // && or || operators
 
+// arrays
+
+var employeeSalaries: [Int] = [54,45,25,20]
+print(employeeSalaries.count)
+employeeSalaries.append(27)
+print(employeeSalaries.count)
+employeeSalaries.remove(at: 1)
+print(employeeSalaries)
+
+//initialize array
+var students = [String]()
 
 
 
