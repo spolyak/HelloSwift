@@ -321,3 +321,17 @@ dictionary["IA"] = nil
 for (code, title) in dictionary {
     print("\(code): \(title)")
 }
+
+// functions
+
+var alength = 5
+var awidth = 10
+
+var aarea = alength * awidth
+
+func calculateArea (length: Int, width: Int) -> Int {
+    return length * width
+}
+
+print(calculateArea(length: alength, width: awidth))
+
