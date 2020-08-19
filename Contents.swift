@@ -36,20 +36,20 @@ let eyeColor = "Blue"
 //eyeColor = "Brown"
 
 /*:
-### Exercise
-
-Consider a car.  What attributes and properties of a car could we capture using variables and constants? Which attributes would be mutable and which would be immutable?
-
-Create variables and constants for the following attributes of a car, and then print each one.
-
-1.  paintColor
-2.  make
-3.  model
-4.  year
-5.  isManualTransmission
-6. seats
-7. mileage
-*/
+ ### Exercise
+ 
+ Consider a car.  What attributes and properties of a car could we capture using variables and constants? Which attributes would be mutable and which would be immutable?
+ 
+ Create variables and constants for the following attributes of a car, and then print each one.
+ 
+ 1.  paintColor
+ 2.  make
+ 3.  model
+ 4.  year
+ 5.  isManualTransmission
+ 6. seats
+ 7. mileage
+ */
 
 var paintColor = "red"
 let make = "Chevy"
@@ -105,19 +105,19 @@ var productPrice: Double = 10.99
 var cost = Double(quantity) * productPrice // explicit cast needed here to mix Int and Double math
 
 /*:
-### Exercise
-
-Consider this scenario: You have a shopping cart with 6 items in it.  The total price of all the items combined is $78.50
-You have a coupon that gets you 25% off of the total price.
-After the coupon is applied, taxes will be applied at a rate of 7.75% of the total cost (cost after coupon).
-
-1. Create 6 different constants that represent the price of each item
-2. Perform addition operations to get the total price of all 6 items and store it in a constant ($78.50)
-3. Create a constant for the 25% coupon
-4. Create a constant called `priceAfterDiscount` and store the total price after the 25% discount has been applied (should equal around $58.87)
-5. Create a constant called `taxes` that stores the total taxes to be charged using the tax rate (should equal around $4.56)
-5. Create a constant called `finalPrice` that applies the 7.75% tax rate to priceAfterDicscount.  (should equal around $63.43)
-*/
+ ### Exercise
+ 
+ Consider this scenario: You have a shopping cart with 6 items in it.  The total price of all the items combined is $78.50
+ You have a coupon that gets you 25% off of the total price.
+ After the coupon is applied, taxes will be applied at a rate of 7.75% of the total cost (cost after coupon).
+ 
+ 1. Create 6 different constants that represent the price of each item
+ 2. Perform addition operations to get the total price of all 6 items and store it in a constant ($78.50)
+ 3. Create a constant for the 25% coupon
+ 4. Create a constant called `priceAfterDiscount` and store the total price after the 25% discount has been applied (should equal around $58.87)
+ 5. Create a constant called `taxes` that stores the total taxes to be charged using the tax rate (should equal around $4.56)
+ 5. Create a constant called `finalPrice` that applies the 7.75% tax rate to priceAfterDicscount.  (should equal around $63.43)
+ */
 
 let item1Price = 10.0
 let item2Price = 10.0
@@ -193,16 +193,16 @@ print(employeeSalaries)
 var students = [String]()
 
 /*:
-### Exercise
-
-1.  Create an array that stores the names of 6 different donuts
-2.  Create a 2nd array that stores the quantity of each of those donuts as an Int
-3.  Remove the last donut in the array and the corresponding last quantity in the quantity array
-4.  Add a new donut name at the beginning of the donut names array and add a new quantity of 0 (zero)  at the beginning of the quantity array
-5.  Remove all elements in both arrays
-
-
-*/
+ ### Exercise
+ 
+ 1.  Create an array that stores the names of 6 different donuts
+ 2.  Create a 2nd array that stores the quantity of each of those donuts as an Int
+ 3.  Remove the last donut in the array and the corresponding last quantity in the quantity array
+ 4.  Add a new donut name at the beginning of the donut names array and add a new quantity of 0 (zero)  at the beginning of the quantity array
+ 5.  Remove all elements in both arrays
+ 
+ 
+ */
 
 var donuts: [String] = ["Glazed", "Chocolate","Jelly", "Jesus", "Mint"]
 var donutCount: [Int] = [5,2,3,2,1]
@@ -241,16 +241,16 @@ for salary in employeeSalaries2 {
 }
 
 /*:
-### Exercise
-
-Consider a banking system where the computer stores transactional data for a customer's account.
-
-1.  Create an array of Double that stores the amounts of ten past purchases
-2.  Create a loop that iterates through the array and prints the amount spent with this formatting: `"Purchase: $X"` where X is the amount of the purchase
-3.  The bank improperly calculated the purchases. Create a *different* loop style that iterates through the array and and adds $0.10 to each purchase amount then print the array
-4.  Create a loop that iterates through the array starting at the *end* of the array and going to the beginning
-
-*/
+ ### Exercise
+ 
+ Consider a banking system where the computer stores transactional data for a customer's account.
+ 
+ 1.  Create an array of Double that stores the amounts of ten past purchases
+ 2.  Create a loop that iterates through the array and prints the amount spent with this formatting: `"Purchase: $X"` where X is the amount of the purchase
+ 3.  The bank improperly calculated the purchases. Create a *different* loop style that iterates through the array and and adds $0.10 to each purchase amount then print the array
+ 4.  Create a loop that iterates through the array starting at the *end* of the array and going to the beginning
+ 
+ */
 
 var pastPurchases: [Double] = [2.35, 5.5, 6.2, 45.23, 23.22, 25.6]
 // print purchases
@@ -295,18 +295,18 @@ for val in airports.values {
 }
 
 /*:
-### Exercise
-
-Consider a real-world dictionary that you might read on your desk.
-
-1.  Create an animal dictionary where the key is the name of the animal and the value should be a string which represents the definition of the animal
-2.  Add ten animals to this dictionary
-3.  Iterate through the dictionary and print the keys and values in this format: `"Animal: X -- Description: Y"` where X is the name of the animal and Y is the description of the animal
-4.  Clear out the entire dictionary and then instead use this dictionary to store United States state abbrieviations and full names (ie CA : California)
-5. Store ten state names and abbreviations in this dictionary and then print them in this format: `Y: X` where Y is the name of the state and where X is the abbreviation
-6. Set the first state you chose to `nil`
-7. Iterate through the array and print each key and value and see what happened to that state you set to nil
-*/
+ ### Exercise
+ 
+ Consider a real-world dictionary that you might read on your desk.
+ 
+ 1.  Create an animal dictionary where the key is the name of the animal and the value should be a string which represents the definition of the animal
+ 2.  Add ten animals to this dictionary
+ 3.  Iterate through the dictionary and print the keys and values in this format: `"Animal: X -- Description: Y"` where X is the name of the animal and Y is the description of the animal
+ 4.  Clear out the entire dictionary and then instead use this dictionary to store United States state abbrieviations and full names (ie CA : California)
+ 5. Store ten state names and abbreviations in this dictionary and then print them in this format: `Y: X` where Y is the name of the state and where X is the abbreviation
+ 6. Set the first state you chose to `nil`
+ 7. Iterate through the array and print each key and value and see what happened to that state you set to nil
+ */
 
 var dictionary: [String: String] = ["Cat": "Cats are fun", "Dog": "Dogs drool", "Rabbit": "Rabbits run"]
 for (kind, description) in dictionary {
@@ -452,10 +452,16 @@ class Vehicle {
     var tires = 4
     var headlights = 2
     var horsepower = 468
-    var model = ""
+    var model = ""?
+    var make = ""?
+    var currentSpeed: Double = 0
     
-    func drive () {
+    init() {
         
+    }
+    
+    func drive (speedIncrease: Double) {
+        currentSpeed += speedIncrease * 2
     }
     func stop() {
         
@@ -478,4 +484,17 @@ ford.stop()
 // objects pass by reference, not by value
 
 // inheritance
+
+class SportsCar: Vehicle {
+    override init() {
+        super.init()
+        make = "BMW"
+        model = "3 Series"
+    }
+    override func drive (speedIncrease: Double) {
+        currentSpeed += speedIncrease * 3
+    }
+}
+
+let car = SportsCar()
 
