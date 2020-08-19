@@ -335,3 +335,147 @@ func calculateArea (length: Int, width: Int) -> Int {
 
 print(calculateArea(length: alength, width: awidth))
 
+// optionals
+
+struct Person {
+    let firstName: String
+    let middleName: String?
+    let lastName: String
+    
+    func printFullName() {
+        let middle = middleName ?? ""
+        print("\(firstName) \(middle) \(lastName)")
+    }
+}
+
+var aPerson = Person(firstName: "Steve", middleName: nil, lastName: "Polyak")
+print(aPerson)
+aPerson.printFullName()
+
+class Persona {
+    let firstName: String
+    let middleName: String?
+    let lastName: String
+    let spouse: Persona?
+    
+    init(firstName: String, middleName: String?, lastName: String, spouse: Persona?) {
+        self.firstName = firstName
+        self.middleName = middleName
+        self.lastName = lastName
+        self.spouse = spouse
+    }
+    func printFullName() {
+        let middle = middleName ?? ""
+        print("\(firstName) \(middle) \(lastName)")
+    }
+    func getFullName() -> String {
+        let middle = middleName ?? ""
+        return "\(firstName) \(middle) \(lastName)"
+    }
+}
+
+let persona1 = Persona(firstName: "Tim", middleName: "Joe", lastName: "Reed", spouse: nil)
+
+//optional chaining
+if let spouseName = persona1.spouse?.getFullName() {
+    print(spouseName)
+} else {
+    print("No Spouse")
+}
+
+//nil coalescing
+print(persona1.spouse?.getFullName() ?? "No Spouse")
+
+//unwrapping an optional
+// print(persona1.spouse!.getFullName())  -- will cause runtime error
+
+var amount = 0
+
+for x in 0..<10 {
+    if x % 2 == 0 {
+        amount += 3
+    }
+}
+print(amount)
+
+let planets = ["Jupiter", "Mars", "Venus", "Earth"]
+print(planets.last!)
+
+var sum = 0
+for i in 0...20 {
+    sum += 1
+}
+print(sum)
+
+var result = 0.0
+
+func calcPerimeter(sides: [Double], perimeter: Double) {
+    var perm = perimeter
+    for x in 0..<sides.count {
+        perm += sides[x]
+    }
+}
+
+calcPerimeter(sides:[5.0,2.0,3.1], perimeter: result)
+print(result)
+
+var data: String?
+var isValid = true
+
+func processData(someData: String?) {
+    guard let validData = someData else {
+        isValid = false
+        return
+    }
+    isValid = true
+}
+
+processData(someData: data)
+print(isValid)
+
+enum Device: Int {
+    case iPhone
+    case Android
+    case MacBook
+    case Windows
+}
+
+var chosen: Device = .MacBook
+let resulta = chosen.rawValue
+
+print(resulta)
+
+// object and classes
+
+class Vehicle {
+    
+    var tires = 4
+    var headlights = 2
+    var horsepower = 468
+    var model = ""
+    
+    func drive () {
+        
+    }
+    func stop() {
+        
+    }
+}
+
+class NewVC: UIViewController {
+    override func viewDidLoad() {
+        //
+    }
+}
+
+let bmw = Vehicle()
+bmw.model = "328i"
+
+let ford = Vehicle()
+ford.model = "F150"
+ford.stop()
+
+// objects pass by reference, not by value
+
+// inheritance
+
